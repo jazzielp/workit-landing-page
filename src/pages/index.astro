@@ -2,10 +2,85 @@
 import PrimaryButton from '../components/PrimaryButton.astro';
 import SecondButton from '../components/SecondButton.astro'
 import Layout from '../layouts/Layout.astro';
+import LogoHero from '../components/LogoHero.astro';
+import FigurePattern1 from '../components/FigurePattern1.astro';
+import FigurePattern2 from '../components/FigurePattern2.astro';
+import FigurePattern3 from '../components/FigurePattern1.astro';
+
 ---
 
 <Layout title="Workit landing page">
-	<header>
-		
+	<header class="
+		relative 
+		mx-auto 
+		w-full 
+		max-w-[375px] 
+		md:max-w-[768px] 
+		lg:max-w-[1440px] 
+		h-[481px] 
+		md:h-[540px] 
+		lg:h-[730px]  
+		overflow-x-hidden">
+		<div class="
+			bg-dark-purple 
+				w-[2000px] 
+				h-[2000px] 
+				md:w-[4000px] 
+				md:h-[4000px] 
+				lg:w-[7000px] 
+				lg:h-[7000px] 
+				top-[-1520px] 
+				md:top-[-3460px] 
+				lg:top-[-6300px] 
+				left-[-820px] 
+				md:left-[-1600px] 
+				lg:left-[-2730px] 
+				rounded-full 
+				absolute 
+				z-[-999]" 
+			/>
+		<div class="px-2 md:px-8 lg:px-32 py-5 lg:py-8 ">
+			<div class="flex justify-between items-center">
+				<LogoHero />
+				<SecondButton>
+					Apply for access
+				</SecondButton>
+			</div>
+			<div class="mt-[60px] text-center">
+				<h1 class="
+					text-[50px] 
+					md:text-[60px] 
+					lg:text-[80px] 
+					max-w-[540px] 
+					mx-auto 
+					font-semibold 
+					font-fraunces 
+					text-white 
+					leading-[50px] 
+					md:leading-[60px] 
+					lg:leading-[80px] 
+					mb-10">
+					Data 
+				<span class="border-b-4 border-eucaplyptus">tailored</span> to your needs.</h1>
+				<PrimaryButton class="mx-auto">
+					Learn more
+				</PrimaryButton>
+			</div>
+		</div>
+		<FigurePattern1 className="hidden md:block absolute md:top-[50px] lg:top-[100px] lg: md:left-[-230px] lg:left-[-140px]"/>
+		<FigurePattern2 className="hidden md:block absolute md:right-[-100px] lg:right-[-40px] md:bottom-[100px] lg:bottom-[260px]" />
 	</header>
+	<img class="
+		w-[320px] 
+		md:w-[514px] 
+		lg:w-[767px] 
+		h-[184px] 
+		md:h-[296px] 
+		lg:h-[441px] 
+		mx-auto 
+		mt-[-90px] 
+		md:mt-[-150px]
+		lg:mt-[-320px]" 
+		src="/image-hero.webp" alt="Img moviel"
+		>
 </Layout>

@@ -18,7 +18,7 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="relative overflow-x-hidden max-w-[1440px]">
+  <body class="relative ">
     <slot />
 
     <img
@@ -30,9 +30,12 @@ const { title } = Astro.props;
 	md:h-[296px]
 	lg:h-[441px]
 	mx-auto
-	mt-[-370px]
-	md:mt-[-380px]
-	lg:mt-[-500px]"
+  top-[380px]
+	lg:top-[460px]
+	absolute
+  left-1/2
+  transform 
+  -translate-x-1/2"
       src="/image-hero.webp"
       alt="Img moviel"
     />

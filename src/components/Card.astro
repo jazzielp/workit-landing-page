@@ -6,12 +6,12 @@ interface Props {
 }
 const {numberArticle, title, content} = Astro.props
 ---
-<article class="flex flex-col gap-6 text-center">
-  <div>
-    <span class="w-[48px] h-[46px] text-center font-fraunces font-semibold text-xl leading-[36px]">{numberArticle}</span>
+<article class="flex flex-col md:flex-row lg:flex-col items-center gap-6 text-center md:text-left lg:text-center w-[340px] md:w-[570px] lg:w-[300px] mx-auto">
+  <div class="w-[48px] h-[46px] flex justify-center items-center font-fraunces font-semibold text-xl leading-[36px] border-2 border-davy-grey rounded-full">
+    <span >{numberArticle}</span>
   </div>
-  <div>
-    <h2>{title}</h2>
-    <p>{content}</p>
+  <div class="flex-1">
+    <h2 class="font-fraunces text-[28px] font-semibold text-dark-purple leading-9 mb-4">{title}</h2>
+    <p class="font-manrope font-normal text-base leading-7 text-dark-purple text-pretty">{content}</p>
   </div>
 </article>

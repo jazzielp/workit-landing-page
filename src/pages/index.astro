@@ -3,8 +3,7 @@ import PrimaryButton from '../components/PrimaryButton.astro';
 import SecondButton from '../components/SecondButton.astro'
 import Layout from '../layouts/Layout.astro';
 import LogoHero from '../components/LogoHero.astro';
-import FigurePattern1 from '../components/FigurePattern1.astro';
-import FigurePattern2 from '../components/FigurePattern2.astro';
+import Card from '../components/Card.astro';
 
 ---
 
@@ -20,24 +19,6 @@ import FigurePattern2 from '../components/FigurePattern2.astro';
 		md:h-[540px] 
 		lg:h-[730px]  
 		overflow-x-hidden">
-		<div class="
-			bg-dark-purple 
-				w-[2000px] 
-				h-[2000px] 
-				md:w-[4000px] 
-				md:h-[4000px] 
-				lg:w-[7000px] 
-				lg:h-[7000px] 
-				top-[-1520px] 
-				md:top-[-3460px] 
-				lg:top-[-6300px] 
-				left-[-820px] 
-				md:left-[-1600px] 
-				lg:left-[-2730px] 
-				rounded-full 
-				absolute 
-				z-[-999]" 
-			/>
 		<div class="px-2 md:px-8 lg:px-32 py-5 lg:py-8 ">
 			<div class="flex justify-between items-center">
 				<LogoHero />
@@ -66,10 +47,11 @@ import FigurePattern2 from '../components/FigurePattern2.astro';
 				</PrimaryButton>
 			</div>
 		</div>
-		<FigurePattern1 className="hidden md:block absolute md:top-[50px] lg:top-[100px] lg: md:left-[-230px] lg:left-[-140px]"/>
-		<FigurePattern2 className="hidden md:block absolute md:right-[-100px] lg:right-[-40px] md:bottom-[100px] lg:bottom-[260px]" />
 	</header>
-	<main>
+	<main class="flex flex-col lg:flex-row mt-36 md:mt-48 lg:mt-56 gap-10 lg:px-[160px]">
+		<Card numberArticle={1} title='Actionable insights' content='Optimize your products, improve customer satisfaction and stay ahead of the competition with our product data analytics.'/>
+		<Card numberArticle={2} title='Data-driven decisions' content='Make data-driven decisions with our product data analytics. Our AI-generated reports help you unlock insights hidden in your product data.'/>
+		<Card numberArticle={3} title='Always affordable' content='Always affordable pricing that scales with your business. Get top-quality product data analytics services without hidden costs or unexpected fees.'/>
 		
 	</main>
 </Layout>

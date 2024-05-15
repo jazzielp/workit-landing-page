@@ -1,6 +1,8 @@
 ---
 import "@fontsource-variable/fraunces/full.css";
 import "@fontsource-variable/manrope";
+import FigurePattern1 from "../components/FigurePattern1.astro";
+import FigurePattern2 from "../components/FigurePattern2.astro";
 interface Props {
   title: string;
 }
@@ -18,9 +20,48 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="relative ">
+  <body class="relative overflow-x-hidden">
     <slot />
-
+    <div
+      class="bg-dark-purple
+      w-[4000px]
+      h-[4000px]
+      md:w-[6000px]
+      md:h-[6000px]
+      lg:w-[10000px]
+      lg:h-[10000px]
+      top-[-3519px]
+      md:top-[-5460px]
+      lg:top-[-9270px]
+      left-1/2
+      transform
+      -translate-x-1/2
+      rounded-full
+      absolute
+      z-[-999]"
+    >
+    </div>
+    <div
+    class="bg-ghost-white
+    w-[4000px]
+    h-[4000px]
+    md:w-[6000px]
+    md:h-[6000px]
+    lg:w-[10000px]
+    lg:h-[10000px]
+    top-[-2550px]
+    md:top-[-4710px]
+    lg:top-[-8750px]
+    left-1/2
+    transform
+    -translate-x-1/2
+    rounded-full
+    absolute
+    z-[-1000]"
+  >
+  </div>
+    <FigurePattern1 className="hidden md:block absolute md:top-[50px] lg:top-[100px] lg: md:left-[-230px] lg:left-[-140px]"/>
+		<FigurePattern2 className="hidden md:block absolute md:top-[230px] lg:top-[350px] md:right-[-100px] lg:right-[-40px]" />
     <img
       class="z-[100000]
 	w-[320px]
@@ -34,7 +75,7 @@ const { title } = Astro.props;
 	lg:top-[460px]
 	absolute
   left-1/2
-  transform 
+  transform
   -translate-x-1/2"
       src="/image-hero.webp"
       alt="Img moviel"

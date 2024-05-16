@@ -1,0 +1,46 @@
+---
+import PrimaryButton from "./PrimaryButton.astro";
+import SecondButton from "./SecondButton.astro";
+import LogoHero from "./icons/LogoHero.astro";
+---
+
+<header class="
+relative 
+mx-auto 
+w-full 
+max-w-[375px] 
+md:max-w-[768px] 
+lg:max-w-[1440px] 
+h-[481px] 
+md:h-[540px] 
+lg:h-[730px]  
+overflow-x-hidden">
+<div class="px-2 md:px-8 lg:px-32 py-5 lg:py-8 ">
+  <div class="flex justify-between items-center">
+    <LogoHero />
+    <SecondButton>
+      Apply for access
+    </SecondButton>
+  </div>
+  <div class="mt-[60px] text-center">
+    <h1 class="
+      text-[50px] 
+      md:text-[60px] 
+      lg:text-[80px] 
+      max-w-[540px] 
+      mx-auto 
+      font-semibold 
+      font-fraunces 
+      text-white 
+      leading-[50px] 
+      md:leading-[60px] 
+      lg:leading-[80px] 
+      mb-10">
+      Data 
+    <span class="border-b-4 border-eucaplyptus">tailored</span> to your needs.</h1>
+    <PrimaryButton class="mx-auto">
+      Learn more
+    </PrimaryButton>
+  </div>
+</div>
+</header>

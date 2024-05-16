@@ -1,0 +1,24 @@
+---
+import Card from "./Card.astro";
+import PrimaryButton from "./PrimaryButton.astro";
+import FigurePattern3 from "./icons/FigurePattern3.astro";
+---
+
+<main class=" mt-36 md:mt-48 lg:mt-56 lg:px-[160px]">
+  <div class="flex flex-col lg:flex-row gap-10">
+    <Card numberArticle={1} title='Actionable insights' content='Optimize your products, improve customer satisfaction and stay ahead of the competition with our product data analytics.'/>
+    <Card numberArticle={2} title='Data-driven decisions' content='Make data-driven decisions with our product data analytics. Our AI-generated reports help you unlock insights hidden in your product data.'/>
+    <Card numberArticle={3} title='Always affordable' content='Always affordable pricing that scales with your business. Get top-quality product data analytics services without hidden costs or unexpected fees.'/>
+  </div>
+  <div class="mx-auto w-[342px] h-[603px] md:w-[689px] md:h-[526px] lg:w-[1112px] lg:h-[647px]  mt-[170px] relative">
+    <img class="size-[281px] lg:size-[477px] absolute left-1/2 transform -translate-x-1/2 md:-translate-x-0 md:top-0 md:left-0" src="/image-founder.webp" alt="image founder">
+    <div class="w-full md:w-[514px] lg:w-[730px] p-8 md:p-14 lg:p-16 bg-dark-purple text-center md:text-left absolute top-56 md:top-36 lg:top-52 md:right-0">
+      <h3 class="font-fraunces font-semibold text-[32px] md:text-[48px] lg:text-[56px] leading-[48px] md:leading-[56px] mb-4 text-white">Be the first to test</h3>
+      <p class="font-manrope font-normal text-base lg:text-lg leading-7 lg:leading-8 text-white mb-6">Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a beta tester for our app and kickstart your company. Apply for access below and I’ll be in touch to schedule a call.</p>
+      <PrimaryButton>
+        Apply for access
+      </PrimaryButton>
+    </div>
+    <FigurePattern3 class="hidden md:block right-0 bottom-[-100px] lg:bottom-0 lg:right-20 absolute"/>
+  </div>
+</main>
